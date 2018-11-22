@@ -1,0 +1,26 @@
+name: GAListener
+author: Raxdiam
+version: 1.4.0
+main: com.swifteh.GAL.GAL
+commands:
+  gal:
+    description: Admin commands
+  fakevote:
+    description: Send a fake vote with optional service name
+  vote:
+    description: Show voting information
+  votetop:
+    aliases: [topvotes]
+    description: Show a list of the top voters
+  rewards:
+    description: Show a list of the cumulative rewards
+permissions:
+  gal.admin:
+    description: Allows you to use all commands
+    default: false
+  gal.noremind:
+    description: Exclude from vote reminder
+    default: false
+  gal.top:
+    description: Allows you to use /votetop
+    default: true
